@@ -1,0 +1,48 @@
+@mixin transform ($scale)
+    -webkit-transform: scale($scale)
+    -ms-transform: scale($scale)
+    transform: scale($scale)
+
+%button
+    padding: 10px
+    background-color: #ddd
+    border: 1px solid black
+    border-radius: 10px
+    margin: 10px
+    font-size: 20px
+    cursor: pointer
+    &:hover
+        @include transform(1.1)
+
+.container
+    width: 100%
+    max-width: 1200px 
+    margin: auto
+
+.header
+    text-align: center
+    h1
+        font-size: 35px
+    button
+        @extend %button
+    
+.instruction
+    text-align: center
+    h2
+        font-size: 30px
+    button
+        @extend %button
+
+.worlds
+    display: flex
+    justify-content: space-around
+    .unsorted
+        background-color: #ddd
+        padding: 10px 20px
+        display: flex
+        flex-direction: column
+        border-radius: 10px
+    .sorted
+        @extend .unsorted
+        
+
