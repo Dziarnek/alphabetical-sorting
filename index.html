@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sortowanie alfabetyczne</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    <body>
+		<div class="container">
+        	<section class="header" id="header">
+        	    <h1>Dzięki tej stronie ułożysz słowa w kolejności alfabetycznej</h1>
+        	    <button id="js-startBtn">Zaczynajmy</button>
+			</section>
+			<div id="page">	
+        		<section class="instruction">
+        		    <h2>Podawaj słowa pojedyńczo</h2>
+        		    <button class="add" id="js-addBtn">Dodaj słowo</button>
+        		    <button class="sort" id="js-sortBtn">Posortuj</button>
+        		</section>
+        		<section class="worlds">
+					<div class="unsorted" id="unsortedWords">
+						<h2>Twoje słowa:</h2>
+					</div>
+					<div class="sorted" id="sortedWords">
+        			    <h2 id="sortedHeader">Posortowane:</h2>
+					</div>
+				</section>
+			</div>
+		</div>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>             
